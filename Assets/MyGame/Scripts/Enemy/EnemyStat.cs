@@ -15,24 +15,24 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
     public float rateTime = 2.5f;
     public int damageToGive = 50;
     public Vector2 force;
-    public Transform skillTarget;
-    public Transform Teleport1;
-    public Transform Teleport2;
+    //public Transform skillTarget;
+    //public Transform Teleport1;
+    //public Transform Teleport2;
     #endregion
     #region Private properties
     private float currentHealth;
     private int isDeadId;
     private int isAttackId;
     private int isIdleId;
-    private int isSkillId;
-    private int isSkillOutId;
+    //private int isSkillId;
+    //private int isSkillOutId;
     private Animator anim;
     private Player player;
     private EnemyAI enemyAI;
-    private float nextSkillTime = 5f;
-    private float skillRateTime = 5f;
-    private float nextTeleportTime = 7f;
-    private float teleportRateTime = 3f;
+    //private float nextSkillTime = 5f;
+    //private float skillRateTime = 5f;
+    //private float nextTeleportTime = 7f;
+    //private float teleportRateTime = 3f;
     #endregion
 
     void Start()
@@ -41,8 +41,8 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
         isDeadId = Animator.StringToHash("isDead");
         isAttackId = Animator.StringToHash("isAttack");
         isIdleId = Animator.StringToHash("isIdle");
-        isSkillId = Animator.StringToHash("isSkill");
-        isSkillOutId = Animator.StringToHash("isSkillOut");
+        //isSkillId = Animator.StringToHash("isSkill");
+        //isSkillOutId = Animator.StringToHash("isSkillOut");
         anim = GetComponentInChildren<Animator>();
         player = GameObject.FindObjectOfType<Player>();
 
@@ -52,7 +52,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
     void Update()
     {
         // Check if it's time to cast a skill
-        if (Time.time >= nextSkillTime && !isDead && player != null && !player.isDead)
+        /*if (Time.time >= nextSkillTime && !isDead && player != null && !player.isDead)
         {
             StartCoroutine(CastSkill());
             nextSkillTime = Time.time + skillRateTime; // Set the next skill cast time
@@ -61,7 +61,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
         {
             StartCoroutine(CastTeleport());
             nextTeleportTime = Time.time + teleportRateTime; // Set the next skill cast time
-        }
+        }*/
     }
 
     public void TakeDamage(int damage, Vector2 force, GameObject instigator)
@@ -107,7 +107,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
         }
     }
 
-    IEnumerator CastSkill()
+    /*IEnumerator CastSkill()
     {
         anim.SetTrigger(isSkillId);
         yield return new WaitForSeconds(0f);
@@ -131,7 +131,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
         {
             teleportAnimator.SetTrigger("isTele");
         }
-    }
+    }*/
 
     IEnumerator DelayedDamageToPlayer()
     {
