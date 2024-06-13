@@ -15979,6 +15979,7 @@ GameObject:
   - component: {fileID: 959872863}
   - component: {fileID: 959872862}
   - component: {fileID: 959872865}
+  - component: {fileID: 959872866}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -19665,6 +19666,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1000
+--- !u!68 &959872866
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959872858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 25.040096, y: -16.027765}
+  - {x: 25.365948, y: -15.744558}
+  - {x: 26.157757, y: -15.898283}
+  - {x: 26.39402, y: -16.766716}
+  - {x: 27.122091, y: -16.88327}
+  - {x: 27.342974, y: -17.704462}
+  - {x: 27.940912, y: -17.864882}
+  - {x: 28.430822, y: -18.67731}
+  - {x: 41.81199, y: -18.919243}
+  - {x: 41.8858, y: -18.08028}
+  - {x: 43.529255, y: -16.992395}
+  - {x: 44.092712, y: -15.988276}
+  - {x: 45.007935, y: -15.939514}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1044353572
 GameObject:
   m_ObjectHideFlags: 0
