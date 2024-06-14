@@ -883,9 +883,6 @@ MonoBehaviour:
   rateTime: 2.5
   damageToGive: 50
   force: {x: 0, y: 0}
-  skillTarget: {fileID: 1240311887}
-  Teleport1: {fileID: 1842727648}
-  Teleport2: {fileID: 901405179}
 --- !u!114 &974369474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,11 +1001,6 @@ Transform:
 --- !u!1 &1240311886 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4049518091672232835, guid: 2e40dca8e07fbe54995bd369b5329768, type: 3}
-  m_PrefabInstance: {fileID: 1941085131}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1240311887 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7749480107050324317, guid: 2e40dca8e07fbe54995bd369b5329768, type: 3}
   m_PrefabInstance: {fileID: 1941085131}
   m_PrefabAsset: {fileID: 0}
 --- !u!212 &1240311888
@@ -6130,7 +6122,7 @@ CompositeCollider2D:
   m_GameObject: {fileID: 1832303095}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3b4e730b6b0a88f4f933a641f8b82695, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

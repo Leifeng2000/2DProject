@@ -79,7 +79,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
             isDead = true;
             anim.SetTrigger(isDeadId);
 
-            Destroy(gameObject, 1.9f);
+            Destroy(gameObject, 1f);
         }
         else
         {
@@ -97,6 +97,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
         if (player == null) return;
         if (collision.CompareTag("Player"))
         {
+            GetComponent<EnemyAI>().enabled = false;
             if (Time.time > nextTime)
             {
                 nextTime = Time.time + rateTime;
@@ -104,6 +105,10 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
                 anim.SetTrigger(isAttackId);
                 StartCoroutine(DelayedDamageToPlayer());
             }
+        }
+        else
+        {
+            GetComponent<EnemyAI>().enabled = true;
         }
     }
 

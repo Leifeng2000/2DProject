@@ -13,8 +13,8 @@ public class EnemyAI : MonoBehaviour
     public Transform pointA;
     public Transform pointB;
     public float patrolSpeed = 2f;
-    public float chaseSpeed = 3.5f;
-    public float chaseRange = 7f;
+    public float chaseSpeed = 3f;
+    public float chaseRange = 4f;
     #endregion
 
     #region private properties
@@ -79,7 +79,6 @@ public class EnemyAI : MonoBehaviour
             Flip();
         }
     }
-
     void Flip()
     {
         facingRight = !facingRight;
