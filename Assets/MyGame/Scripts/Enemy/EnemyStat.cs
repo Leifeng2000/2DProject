@@ -106,9 +106,16 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
                 StartCoroutine(DelayedDamageToPlayer());
             }
         }
-        else
+        /*else
         {
             GetComponent<EnemyAI>().enabled = true;
+        }*/
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            enemyAI.enabled = true;
         }
     }
 
