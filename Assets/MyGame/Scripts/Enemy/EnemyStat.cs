@@ -23,7 +23,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
     private float currentHealth;
     private int isDeadId;
     private int isAttackId;
-    private int isIdleId;
+    //private int isIdleId;
     //private int isSkillId;
     //private int isSkillOutId;
     private Animator anim;
@@ -40,7 +40,7 @@ public class EnemyStat : MonoBehaviour, ICanTakeDamage
         currentHealth = maxHealth;
         isDeadId = Animator.StringToHash("isDead");
         isAttackId = Animator.StringToHash("isAttack");
-        isIdleId = Animator.StringToHash("isIdle");
+        //isIdleId = Animator.StringToHash("isIdle");
         //isSkillId = Animator.StringToHash("isSkill");
         //isSkillOutId = Animator.StringToHash("isSkillOut");
         anim = GetComponentInChildren<Animator>();
