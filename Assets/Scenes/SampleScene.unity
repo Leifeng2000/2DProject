@@ -28478,7 +28478,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5526944806199320156, guid: 4d61ef2bde1a6264aa8f6fa26892c0c4, type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5526944806199320157, guid: 4d61ef2bde1a6264aa8f6fa26892c0c4, type: 3}
       propertyPath: m_FlipX
